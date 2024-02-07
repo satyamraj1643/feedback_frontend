@@ -22,7 +22,7 @@ const Form = () => {
     event.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:5000/formsubmit', {
+      const response = await fetch('https://feedbackapi-dya7.onrender.com/formsubmit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
