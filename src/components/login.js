@@ -59,7 +59,7 @@ const Login = () => {
           email,
           password,
           role,
-          adminId // Include adminId in the request body
+          adminId 
         })
       });
 
@@ -125,7 +125,7 @@ const Login = () => {
                   <option value="admin">Admin</option>
                 </select>
               </div>
-              {role === 'admin' && ( // Render adminId input only if role is 'admin'
+              {role === 'admin' && ( 
                 <div className="mt-5">
                   <p className="text-sm m-1 text-[#B2533E]">Admin ID:</p>
                   <input type="text" value={adminId} onChange={handleAdminIdChange} placeholder="Admin ID" className="border border-[#186F65] py-1 px-2 w-full rounded-lg" />

@@ -47,11 +47,10 @@ const Form = () => {
 
       navigate('/submission', {state:{feedbackId}})
 
-      // console.log(feedbackId,fn,ln);
-      // console.log('Feedback submitted successfully');
+      
     } catch (error) {
       console.error('Error submitting feedback:', error);
-      // Handle error
+     
     }
   };
   

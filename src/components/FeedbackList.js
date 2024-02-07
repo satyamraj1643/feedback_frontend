@@ -11,7 +11,7 @@ const FeedbackList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Fetch data from your API using the userId dynamically
+        
         const response = await fetch(`https://feedbackapi-dya7.onrender.com/getsubmission?userId=${userId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
@@ -20,12 +20,12 @@ const FeedbackList = () => {
         setFeedbacks(data.data);
       } catch (error) {
         console.error('Error fetching data:', error);
-        // Handle error
+        
       }
     };
 
     fetchData();
-  }, [userId]); // Include userId in the dependency array to re-fetch data when userId changes
+  }, [userId]); 
 
   return (
     <div className="h-screen bg-gradient-to-br from-blue-500 to-purple-600 p-5 justify-center ">
@@ -33,8 +33,8 @@ const FeedbackList = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {feedbacks.map((feedback, index) => (
           <Card
-            key={index} // Use a unique key for each card
-            feedback={feedback} // Pass the feedback object as prop
+            key={index} 
+            feedback={feedback} 
           />
         ))}
       </div>

@@ -23,7 +23,7 @@ const App = () => {
     <>
        <Home/>
       <Routes>
-        {/* Public Routes */}
+        {/* public routes */}
         {!isLoggedIn && (
           <>
             <Route path="/" element={<Login />} />
@@ -33,7 +33,7 @@ const App = () => {
           </>
         )}
 
-        {/* Private Routes */}
+        {/* private routes */}
         {isLoggedIn && (
           <>
             <Route path="/" element={<Form />} />
@@ -44,7 +44,7 @@ const App = () => {
           </>
         )}
 
-        {/* Admin Routes */}
+        {/* admin routes */}
         {isAdmin && isLoggedIn && (
           <>
             <Route path={`/allfeedbacks`} element={<AdminFeedbacks />} />
