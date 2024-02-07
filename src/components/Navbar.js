@@ -26,7 +26,7 @@ const Navbar = () => {
           {isAdmin && (
             <li>
               <Link
-                to={`/allfeedbacks/${id}/${hashedAdminId}`}
+                to={`/allfeedbacks`}
                 className="text-white hover:text-gray-300 transition duration-300"
               >
                 See Feedbacks

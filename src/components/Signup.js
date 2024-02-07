@@ -97,7 +97,7 @@ const Signup = () => {
         if (role === "user") {
           navigate("/form");
         } else {
-          navigate(`/allfeedbacks/${id}/${hadminId}`);
+          navigate(`/allfeedbacks`);
         }
       } else if (data.error === "user_exists") {
         setSubmissionStatus(

@@ -27,10 +27,10 @@ const App = () => {
         
         {isAdmin && authCtx.isLoggedIn && (
           <>
-          
-          <Route path='/' element={<AdminFeedbacks />} />
+          <Route path={`/allfeedbacks`} element={<AdminFeedbacks />} />
+          <Route path='*' element={<AdminFeedbacks />} />
 
-          <Route path={`/allfeedbacks/${id}/${hashedAdminId}`} element={<AdminFeedbacks />} />
+          
           </>
         )}
 
