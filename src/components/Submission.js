@@ -13,11 +13,11 @@ const Submission = (props) => {
   const feedbackId= location.state.feedbackId;
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen bg-gradient-to-br from-blue-500 to-purple-600">
       <table className="table-auto border border-gray-200 shadow-lg rounded-lg mb-4">
         <tbody>
           <tr>
-            <td className="px-4 py-2 text-xl text-center"> Your unique submission id is: {feedbackId}</td>
+            <td className="px-4 py-2 text-xl text-center bg-white"> Your unique submission id is: {feedbackId}</td>
           </tr>
         </tbody>
       </table>

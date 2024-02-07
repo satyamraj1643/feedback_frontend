@@ -28,9 +28,9 @@ const FeedbackList = () => {
   }, [userId]); // Include userId in the dependency array to re-fetch data when userId changes
 
   return (
-    <div className="container mx-auto p-8">
-      <h1 className="text-3xl font-semibold mb-6">Your feedbacks</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="h-screen bg-gradient-to-br from-blue-500 to-purple-600 p-5 justify-center ">
+      <h1 className="text-3xl font-semibold mb-6 text-white">Your Feedbacks</h1>
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {feedbacks.map((feedback, index) => (
           <Card
             key={index} // Use a unique key for each card

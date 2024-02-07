@@ -2,8 +2,10 @@ import React from 'react';
 
 const Card = ({ feedback }) => {
   return (
-    <div className="bg-white border rounded-lg shadow-lg p-6 min-w-0 max-w-md">
-      <p><strong>Feedback:</strong> {feedback.content}</p>
+    <div className="bg-white text-l border rounded-lg shadow-lg p-6 min-w-0 max-w-md">
+      <div style={{ overflowWrap: 'break-word' }}>
+        <p> <strong>Feedback</strong> {feedback.content}</p>
+      </div>
       <p><strong>Feedback ID:</strong> {feedback.feedbackId}</p>
       <p><strong>Type:</strong> {feedback.feedbackType}</p>
       <p> By - {feedback.firstName} {feedback.lastName} </p>

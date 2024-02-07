@@ -94,7 +94,7 @@ const Login = () => {
   };
 
   return (
-    <div className="h-auto md:h-screen py-32" style={{ background: 'linear-gradient(90deg, #186F65, #B5CB99 25%, #FCE09B 50%, #B2533E)' }}>
+    <div className="h-auto md:h-screen py-32 bg-gradient-to-br from-blue-500 to-purple-600" >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
           <div className="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url('back.png')" }}>

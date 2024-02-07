@@ -57,7 +57,7 @@ const Form = () => {
   
 
   return (
-    <div className="flex items-center justify-center h-screen" style={{ background: 'linear-gradient(90deg, #186F65, #B5CB99 25%, #FCE09B 50%, #B2533E)' }}>
+    <div className="flex items-center justify-center h-screen bg-gradient-to-br from-blue-500 to-purple-600" >
       <div className="max-w-md w-full p-6 bg-gray-100 rounded-lg shadow-lg">
         <textarea
           className="w-full h-40 px-4 py-2 mb-4 rounded-lg resize-none bg-gray-200 focus:bg-white focus:outline-none"
