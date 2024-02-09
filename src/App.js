@@ -40,6 +40,7 @@ const App = () => {
             <Route path="/form" element={<Form />} />
             <Route path={`/feedbacks/${id}`} element={<FeedbackList />} />
             <Route path="/submission" element={<Submission />} />
+            <Route path="*" element={<NotFoundPage />} />
             
           </>
         )}
